@@ -38,11 +38,14 @@ buttonHtml.addEventListener('click', function(){
         let prezzoOver65 = prezzoBiglietto * 0.60
 
         if( valueEta === 'maggiorenne' ){
-            document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + prezzoMaggiorenne.toFixed(2);
+            document.getElementById('prezzo').innerHTML = prezzoMaggiorenne.toFixed(2)+ "€";
         } else if(valueEta === 'minorenne'){
-            document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + prezzoMinorenne.toFixed(2);
+            document.getElementById('prezzo').innerHTML = prezzoMinorenne.toFixed(2)+ "€";
         } else if(valueEta === 'over65'){
-            document.getElementById('prezzo').innerHTML = "il prezzo del biglietto è: " + prezzoOver65.toFixed(2);
+            document.getElementById('prezzo').innerHTML = prezzoOver65.toFixed(2)+ "€";
         }
     }
+
+    document.getElementById('passeggero').innerHTML = valueName;
+
 })
